@@ -88,21 +88,29 @@ Using Optuna, we were able to get the best parameters For RandomForest, Logistic
 Optuna is  automatic hyperparameter tuning framework that is completely written in Python.
 
 
+<img  src="image/accuracy.png" width=500 height=300/>
 
 
 ### Confusion Matrix for Voting Classifier, our best model
 
 
-
+<img  src="image/conf_matrix.png" width=500 height=300/>
 
 
 
 # Summary:
 
+We have successfully build four models using Logistic Regression, Random Forest, MLP CLassifier and VotingClassifier.
 
+MLP Classifier has a very good result of 88%%. MLPClassifier stands for Multi-layer Perceptron classifier which in the name itself connects to a Neural Network. Unlike other classification algorithms such as Support Vectors or Naive Bayes Classifier, MLPClassifier relies on an underlying Neural Network to perform the task of classificationk that is completely written in Python.
+
+VotingClassifier using two of our estimators -  RandomForest and MLP did slightly better with 89% accuracy. Voting classifier is a machine learning estimator that trains various base models or estimators and predicts on the basis of aggregating the findings of each base estimator. It used "soft" voting (if ‘hard’, uses predicted class labels for majority rule voting. Else if ‘soft’, predicts the class label based on the argmax of the sums of the predicted probabilities, which is recommended for an ensemble of well-calibrated classifiers)
 
 
 
 ## Recommendation:
+
+Deep Learning model has a lot of room for improvement, tuning by adding more hidden layers, we can try to achieve 90% accuracy.
+For enhancement, this can be a two-step model, where we identify the gender first, then the emotions.
 
 
