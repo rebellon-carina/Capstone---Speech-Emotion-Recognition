@@ -92,10 +92,15 @@ Optuna is  automatic hyperparameter tuning framework that is completely written 
 <img  src="image/accuracy.png" width=500 height=300/>
 
 
-### Confusion Matrix for Voting Classifier, our best model
+Deep Learning model using CONV1D had a better accuracy of 90%.
+
+<img  src="image/classifications.png" width=500 height=300/>
 
 
-<img  src="image/conf_matrix.png" width=500 height=300/>
+### Confusion Matrix from TensorFlow's CONV1D, our best model:
+
+
+<img  src="image/x.png" width=500 height=300/>
 
 
 
