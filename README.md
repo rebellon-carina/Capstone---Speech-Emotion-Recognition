@@ -94,7 +94,7 @@ Optuna is  automatic hyperparameter tuning framework that is completely written 
 
 Deep Learning model using CONV1D had a better accuracy of 90%.
 
-<img  src="image/classifications.png" width=300 height=300/>
+<img  src="image/classifications.png" width=300 height=200/>
 
 
 ### Confusion Matrix from TensorFlow's CONV1D, our best model:
