@@ -33,7 +33,8 @@ Capstone - Speech Emotion Recognition
 
 ## Problem Statement:
 
-We were hired by a Call Center company for their quality assurance project, one part of this project is to analyse customer interactions,  the goal is to  detect emotions from  the customers and agents. This will help them  not only to analyse the customer behaviours but also how agents respond to customer’s emotion. 
+We want to participate in the bidding for a Call Centre company for their quality assurance project, one part of this project is to analyse customer interactions,  the goal is to  detect emotions from  the customers and agents. This will help them  not only to analyse the customer behaviours but also how agents respond to customer’s emotion. 
+
 
 This  project will serve as Proof of Concept, can we detect the 7 emotions from audio file?  ***Angry,  Disgust, Fear, Happy, Neutral, Sad, Surprised***
 
@@ -100,17 +101,24 @@ Optuna is  automatic hyperparameter tuning framework that is completely written 
 
 # Summary:
 
-We have successfully build four models using Logistic Regression, Random Forest, MLP CLassifier and VotingClassifier.
+We have successfully build  models using sklearn's Logistic Regression, Random Forest, MLP CLassifier, VotingClassifier and TensorFlow's deep learning using Conv1D.
 
-MLP Classifier has a very good result of 88%%. MLPClassifier stands for Multi-layer Perceptron classifier which in the name itself connects to a Neural Network. Unlike other classification algorithms such as Support Vectors or Naive Bayes Classifier, MLPClassifier relies on an underlying Neural Network to perform the task of classificationk that is completely written in Python.
+MLP Classifier achieved  88% Accuracy. MLPClassifier stands for Multi-layer Perceptron classifier which in the name itself connects to a Neural Network. Unlike other classification algorithms such as Support Vectors or Naive Bayes Classifier, MLPClassifier relies on an underlying Neural Network to perform the task of classification that is completely written in Python.
 
 VotingClassifier using two of our estimators -  RandomForest and MLP did slightly better with 89% accuracy. Voting classifier is a machine learning estimator that trains various base models or estimators and predicts on the basis of aggregating the findings of each base estimator. It used "soft" voting (if ‘hard’, uses predicted class labels for majority rule voting. Else if ‘soft’, predicts the class label based on the argmax of the sums of the predicted probabilities, which is recommended for an ensemble of well-calibrated classifiers)
+
+
+Deep Learning has a remarkable 90% Accuracy! *Happy* has the lowest Precision of 87% and *fear* with lowest Recall of 85%. I listened to the wrong predictions, and it is really a challenge even for human to predict the actual emotion.
 
 
 
 ## Recommendation:
 
-Deep Learning model has a lot of room for improvement, tuning by adding more hidden layers, we can try to achieve 90% accuracy.
+There are a lot more features from Librosa that were not included in the model, we can further analyze which features can help in getting better prediction.
+
 For enhancement, this can be a two-step model, where we identify the gender first, then the emotions.
+
+
+
 
 
