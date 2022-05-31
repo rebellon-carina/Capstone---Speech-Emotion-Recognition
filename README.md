@@ -100,7 +100,7 @@ Deep Learning model using CONV1D had a better accuracy of 90%.
 ### Confusion Matrix from TensorFlow's CONV1D, our best model:
 
 
-<img  src="image/x.png" width=500 height=300/>
+<img  src="image/conf_matrix_ser.png" width=500 height=300/>
 
 
 
